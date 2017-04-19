@@ -8,6 +8,6 @@ describe('scrabble score',{:type => :feature}) do
     visit('/')
     fill_in('score', :with => 'how are you')
     click_button('Check Score')
-    expect(page).to have_content()
+    expect(page).to have_content(18)
   end
 end
